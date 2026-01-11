@@ -5,9 +5,9 @@ function About() {
     <section id="about" className="max-w-6xl mx-auto p-8 mt-8 space-y-8">
       {/* Hero Section */}
       <div className="rounded-3xl border-2 border-gray-300 bg-black/30 backdrop-blur-sm p-8 hover:scale-105 hover:border-white hover:shadow-xl transition-all duration-300">
-        <div className="flex flex-col lg:flex-row gap-8">
+        <div className="flex flex-col lg:flex-row gap-8 items-center lg:items-start">
           {/* Vänster - Bild i egen box */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 flex justify-center w-full lg:w-auto">
             <div className="rounded-2xl border-2 border-gray-600/50 bg-black/20 p-4 backdrop-blur-sm">
               <img 
                 src={Me} 
