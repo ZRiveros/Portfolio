@@ -62,39 +62,39 @@ function About() {
       </div>
 
       {/* Information Section */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* About Me */}
         <div className="rounded-3xl border-2 border-gray-300 bg-black/30 backdrop-blur-sm p-6 hover:scale-105 hover:border-white hover:shadow-xl transition-all duration-300">
-          <h2 className="text-3xl font-bold mb-4 text-white text-center flex items-center justify-center gap-3">
+          <h2 className="text-2xl font-bold mb-3 text-white text-center flex items-center justify-center gap-3">
             <i className="fa-solid fa-user"></i>
             About Me
           </h2>
-          <p className="text-lg text-gray-300 leading-relaxed">
+          <p className="text-base text-gray-300 leading-relaxed">
             I enjoy building applications with a clear structure, maintainable code, and a strong connection between frontend and backend. I'm particularly interested in how different technologies interact in real-world projects, from APIs and databases to user-friendly interfaces.
           </p>
         </div>
 
         {/* Education */}
         <div className="rounded-3xl border-2 border-gray-300 bg-black/30 backdrop-blur-sm p-6 hover:scale-105 hover:border-white hover:shadow-xl transition-all duration-300">
-          <h2 className="text-3xl font-bold mb-4 text-white text-center flex items-center justify-center gap-3">
+          <h2 className="text-2xl font-bold mb-3 text-white text-center flex items-center justify-center gap-3">
             <i className="fa-solid fa-graduation-cap"></i>
             Education
           </h2>
-          <p className="text-lg text-gray-300 leading-relaxed">
+          <p className="text-base text-gray-300 leading-relaxed">
             I am currently studying Web development.NET with a focus on full-stack applications and modern web technologies. My background includes .NET development, frontend frameworks such as Angular and React, and working with both relational and SQL databases.
           </p>
-          <p className="text-lg text-gray-300 leading-relaxed mt-4">
+          <p className="text-base text-gray-300 leading-relaxed mt-3">
             I'm driven by learning, problem-solving, and continuously improving my technical skills through hands-on projects and real-world development experience.
           </p>
         </div>
 
         {/* Background */}
         <div className="rounded-3xl border-2 border-gray-300 bg-black/30 backdrop-blur-sm p-6 hover:scale-105 hover:border-white hover:shadow-xl transition-all duration-300">
-          <h2 className="text-3xl font-bold mb-4 text-white text-center flex items-center justify-center gap-3">
+          <h2 className="text-2xl font-bold mb-3 text-white text-center flex items-center justify-center gap-3">
             <i className="fa-solid fa-briefcase"></i>
             Background
           </h2>
-          <p className="text-lg text-gray-300 leading-relaxed">
+          <p className="text-base text-gray-300 leading-relaxed">
             Before transitioning into web development, I worked for several years in the restaurant industry as a chef, as well as within warehouse and industrial environments. This background has strengthened my ability to work structured, solution-oriented, and efficiently in fast-paced settings — skills I bring with me into my work as a developer.
           </p>
         </div>

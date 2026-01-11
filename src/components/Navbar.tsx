@@ -1,9 +1,14 @@
+import { useState } from 'react';
+
 function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
+    setIsMenuOpen(false); // Stäng menu efter klick
   };
 
   return (
@@ -18,8 +23,8 @@ function Navbar() {
         </div>
       </div>
 
-      {/* Navigation länkar */}
-      <ul className="flex gap-6 list-none items-center">
+      {/* Desktop Navigation */}
+      <ul className="hidden md:flex gap-6 list-none items-center">
         <li 
           onClick={() => scrollToSection('about')}
           className="text-white text-xl font-medium cursor-pointer hover:text-blue-400 transition-colors"
@@ -38,8 +43,6 @@ function Navbar() {
         >
           <i className="fa-solid fa-briefcase"></i> Projects
         </li>
-        
-        {/* GitHub länk */}
         <li>
           <a 
             href="https://github.com/ZRiveros" 
@@ -48,10 +51,9 @@ function Navbar() {
             className="text-white text-2xl cursor-pointer hover:text-purple-400 transition-colors"
             title="Visit my GitHub"
           >
-            <i className="fa-brands fa-github"></i>Github
+            <i className="fa-brands fa-github"></i>
           </a>
         </li>
-        
         <li 
           onClick={() => scrollToSection('contact')}
           className="text-white text-xl font-medium cursor-pointer hover:text-blue-400 transition-colors"
@@ -60,8 +62,58 @@ function Navbar() {
         </li>
       </ul>
 
+      {/* Mobile Menu Button */}
+      <button 
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+        className="md:hidden text-white text-2xl mr-4"
+      >
+        <i className={`fa-solid ${isMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
+      </button>
+
+      {/* Mobile Menu Dropdown */}
+      {isMenuOpen && (
+        <div className="absolute top-full left-4 right-4 mt-2 rounded-3xl border-2 border-gray-300 bg-black/95 backdrop-blur-sm md:hidden">
+          <ul className="flex flex-col gap-4 p-6 list-none">
+            <li 
+              onClick={() => scrollToSection('about')}
+              className="text-white text-lg font-medium cursor-pointer hover:text-blue-400 transition-colors"
+            >
+              <i className="fa-solid fa-address-card"></i> About me
+            </li>
+            <li 
+              onClick={() => scrollToSection('skills')}
+              className="text-white text-lg font-medium cursor-pointer hover:text-blue-400 transition-colors"
+            >
+              <i className="fa-solid fa-book"></i> Skills
+            </li>
+            <li 
+              onClick={() => scrollToSection('projects')}
+              className="text-white text-lg font-medium cursor-pointer hover:text-blue-400 transition-colors"
+            >
+              <i className="fa-solid fa-briefcase"></i> Projects
+            </li>
+            <li>
+              <a 
+                href="https://github.com/ZRiveros" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-white text-lg cursor-pointer hover:text-purple-400 transition-colors inline-flex items-center gap-2"
+              >
+                <i className="fa-brands fa-github"></i> GitHub
+              </a>
+            </li>
+            <li 
+              onClick={() => scrollToSection('contact')}
+              className="text-white text-lg font-medium cursor-pointer hover:text-blue-400 transition-colors"
+            >
+              <i className="fa-solid fa-envelope"></i> Contact
+            </li>
+          </ul>
+        </div>
+      )}
+
       {/* Tom div för att balansera layouten */}
-      <div className="w-12"></div>
+      <div className="hidden md:block w-12"></div>
     </nav>
   );
 }
