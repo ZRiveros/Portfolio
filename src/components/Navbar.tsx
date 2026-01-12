@@ -8,12 +8,12 @@ function Navbar() {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
-    setIsMenuOpen(false); // Stäng menu efter klick
+    setIsMenuOpen(false); // Close menu with a click
   };
 
   return (
     <nav className="flex items-center justify-between p-4 m-4 mx-auto max-w-5xl rounded-full border-2 border-gray-300 bg-black/30 backdrop-blur-sm sticky top-4 z-50">
-      {/* ZR Logo till vänster */}
+      {/* ZR Logo to the left */}
       <div className="flex items-center ml-4 cursor-pointer" onClick={() => scrollToSection('about')}>
         <div className="relative w-12 h-12">
           <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full opacity-20 blur-lg"></div>
@@ -112,7 +112,7 @@ function Navbar() {
         </div>
       )}
 
-      {/* Tom div för att balansera layouten */}
+          {/* Empty div to balance the layout */}
       <div className="hidden md:block w-12"></div>
     </nav>
   );

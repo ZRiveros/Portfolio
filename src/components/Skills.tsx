@@ -28,10 +28,10 @@ function Skills() {
               Throughout my education at EC Utbildning, I have gained a solid foundation in software development, covering both frontend and backend technologies.
             </p>
 
-            {/* Scrollande ikon-banner med SVG logotyper */}
+            {/* Scrolling icons banner with SVG logos */}
             <div className="overflow-hidden whitespace-nowrap py-6 bg-white/5 rounded-2xl">
               <div className="inline-flex animate-scroll items-center">
-                {/* Första uppsättningen */}
+                {/* First set */}
                 <div className="flex flex-col items-center mx-8">
                     <img src={HtmlIcon} alt="HTML5" className="h-16 w-16" />
                     <span className="text-white text-sm mt-2">HTML5</span>
