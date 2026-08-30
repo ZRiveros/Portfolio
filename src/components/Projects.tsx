@@ -27,10 +27,10 @@ function Projects() {
               </span>
             </div>
             <p className="text-gray-300 leading-relaxed">
-              A 2D Metroidvania I'm building solo in <span className="text-purple-300 font-semibold">Godot</span>, written in a mix of <span className="text-purple-300 font-semibold">C#</span> and <span className="text-purple-300 font-semibold">GDScript</span>. Still an early prototype, but the core systems are working: player movement, combat and enemy behaviour, room transitions and level structure, and save/load with ability gating.
+              A 2.5D Metroidvania I'm building with another developer in <span className="text-purple-300 font-semibold">Godot</span>, written in a mix of <span className="text-purple-300 font-semibold">C#</span> and <span className="text-purple-300 font-semibold">GDScript</span>. Still an early prototype, but the core systems are working: player movement, combat and enemy behaviour, room transitions and level structure, and save/load with ability gating.
             </p>
             <p className="text-gray-300 leading-relaxed mt-3">
-              The C# side overlaps directly with my .NET work, applied to a very different problem space — real-time state, frame-by-frame update loops, and keeping the architecture clean as scope grows.
+              The C# side overlaps directly with my .NET work, applied to a very different problem space — real-time state, frame-by-frame update loops, and keeping the architecture clean in a shared codebase as scope grows.
             </p>
             <p className="text-gray-400 leading-relaxed mt-3 text-sm italic">
               Repository and gameplay footage to follow once the art and level design are further along.
