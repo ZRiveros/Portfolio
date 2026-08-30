@@ -14,6 +14,29 @@ function Projects() {
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* Featured - Godot Metroidvania (in development) */}
+          <div className="md:col-span-2 rounded-3xl border-2 border-gray-300 bg-gradient-to-r from-purple-500/10 to-blue-500/10 backdrop-blur-sm p-6 hover:scale-105 hover:border-white hover:shadow-xl transition-all duration-300">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-3">
+              <h2 className="text-2xl font-bold text-white flex items-center gap-2">
+                <i className="fa-solid fa-gamepad text-purple-400"></i>
+                Metroidvania — Godot Engine
+              </h2>
+              <span className="self-start sm:self-auto flex-shrink-0 inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm font-semibold text-purple-200 bg-purple-500/20 border border-purple-400/40">
+                <i className="fa-solid fa-hammer"></i>
+                In development
+              </span>
+            </div>
+            <p className="text-gray-300 leading-relaxed">
+              A 2D Metroidvania I'm building solo in <span className="text-purple-300 font-semibold">Godot</span>, written in a mix of <span className="text-purple-300 font-semibold">C#</span> and <span className="text-purple-300 font-semibold">GDScript</span>. Still an early prototype, but the core systems are working: player movement, combat and enemy behaviour, room transitions and level structure, and save/load with ability gating.
+            </p>
+            <p className="text-gray-300 leading-relaxed mt-3">
+              The C# side overlaps directly with my .NET work, applied to a very different problem space — real-time state, frame-by-frame update loops, and keeping the architecture clean as scope grows.
+            </p>
+            <p className="text-gray-400 leading-relaxed mt-3 text-sm italic">
+              Repository and gameplay footage to follow once the art and level design are further along.
+            </p>
+          </div>
+
           {/* Project 1 */}
           <div className="rounded-3xl border-2 border-gray-300 bg-black/30 backdrop-blur-sm p-6 hover:scale-105 hover:border-white hover:shadow-xl transition-all duration-300">
             <h2 className="text-2xl font-bold mb-3 text-white flex items-center gap-2">

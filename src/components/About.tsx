@@ -24,9 +24,18 @@ function About() {
               <h1 className="text-5xl lg:text-6xl font-bold mb-2 text-white">
                 Zebastian Riveros
               </h1>
-              <h2 className="text-2xl lg:text-3xl text-blue-400 mb-4 font-light">
+              <h2 className="text-2xl lg:text-3xl text-blue-400 mb-3 font-light">
                 Junior Web Developer .NET
               </h2>
+              <div className="flex justify-center lg:justify-start mb-4">
+                <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-semibold text-green-200 bg-green-500/15 border border-green-400/40">
+                  <span className="relative flex h-2.5 w-2.5">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-400"></span>
+                  </span>
+                  Open to work
+                </span>
+              </div>
               <p className="text-lg text-gray-300 leading-relaxed">
                 Full-stack developer with a passion for clean architecture and modern web technologies.
               </p>
@@ -53,7 +62,7 @@ function About() {
                   Thesis Project at CTEK
                 </h3>
                 <p className="text-base text-gray-300 leading-relaxed">
-                  Migrating a legacy backend API that controls the production admin application. The project involves restructuring from <span className="text-purple-300 font-semibold">CherryPy</span> to <span className="text-purple-300 font-semibold">FastAPI</span> with proper REST standards. This admin portal manages essential production and support data.
+                  Migrating a legacy backend API that controls the production admin application. The project involved restructuring from <span className="text-purple-300 font-semibold">CherryPy</span> to <span className="text-purple-300 font-semibold">FastAPI</span> with proper REST standards. This admin portal manages essential production and support data.
                 </p>
               </div>
             </div>
@@ -81,10 +90,19 @@ function About() {
             Education
           </h2>
           <p className="text-base text-gray-300 leading-relaxed">
-            I am currently studying Web development.NET with a focus on full-stack applications and modern web technologies. My background includes .NET development, frontend frameworks such as Angular and React, and working with both relational and SQL databases.
+            I hold a diploma in Web Development .NET from EC Utbildning, completed in June 2026. The programme centred on full-stack applications and modern web technologies — .NET development, frontend frameworks such as Angular and React, and working with both relational and NoSQL databases.
           </p>
           <p className="text-base text-gray-300 leading-relaxed mt-3">
-            I'm driven by learning, problem-solving, and continuously improving my technical skills through hands-on projects and real-world development experience.
+            Since graduating I've kept building on that foundation, currently working through{' '}
+            <a
+              href="https://learn.microsoft.com/en-us/training/dotnet/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:text-blue-300 transition-colors"
+            >
+              Microsoft's official .NET learning paths
+            </a>{' '}
+            alongside my own projects. I'm driven by learning, problem-solving, and continuously improving my technical skills through hands-on development.
           </p>
         </div>
 
@@ -95,7 +113,10 @@ function About() {
             Background
           </h2>
           <p className="text-base text-gray-300 leading-relaxed">
-            Before transitioning into web development, I worked for several years in the restaurant industry as a chef, as well as within warehouse and industrial environments. This background has strengthened my ability to work structured, solution-oriented, and efficiently in fast-paced settings — skills I bring with me into my work as a developer.
+            I currently work as a machine operator at Freudenberg Household Materials through Lernia — running and monitoring production equipment with a focus on quality control, troubleshooting, and continuous improvement — while building as a developer alongside it.
+          </p>
+          <p className="text-base text-gray-300 leading-relaxed mt-3">
+            Before moving into web development I spent several years as a chef, and in warehouse and industrial environments. That background taught me to work in a structured, solution-oriented, and efficient way under pressure — something I carry directly into how I approach code.
           </p>
         </div>
       </div>

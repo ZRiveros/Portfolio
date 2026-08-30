@@ -1,20 +1,21 @@
-import HtmlIcon from '../icons/HTML.svg';
-import CssIcon from '../icons/CSS.svg';
-import JsIcon from '../icons/JavaScript.svg';
-import CSharpIcon from '../icons/CSharp.svg';
-import ReactIcon from '../icons/React.svg';
-import AngularIcon from '../icons/Angular.svg';
-import PythonIcon from '../icons/Python.svg';
-import MySqlIcon from '../icons/SQL.svg';
-import AzureIcon from '../icons/Azure.svg';
-import GitIcon from '../icons/Git.svg';
-import GitHubIcon from '../icons/GitHub.svg';
-import NetCoreIcon from '../icons/NET.svg';
-import TailwindIcon from '../icons/Tailwind.svg';
-import TypeScriptIcon from '../icons/TypeScript.svg';
-import VSCodeIcon from '../icons/VSC.svg';
-import VisualStudioIcon from '../icons/VS.svg';
-import LinuxIcon from '../icons/Linux.svg';
+import HtmlIcon from '../Icons/HTML.svg';
+import CssIcon from '../Icons/CSS.svg';
+import JsIcon from '../Icons/JavaScript.svg';
+import CSharpIcon from '../Icons/CSharp.svg';
+import ReactIcon from '../Icons/React.svg';
+import AngularIcon from '../Icons/Angular.svg';
+import PythonIcon from '../Icons/Python.svg';
+import MySqlIcon from '../Icons/SQL.svg';
+import AzureIcon from '../Icons/Azure.svg';
+import GitIcon from '../Icons/Git.svg';
+import GitHubIcon from '../Icons/GitHub.svg';
+import NetCoreIcon from '../Icons/NET.svg';
+import TailwindIcon from '../Icons/Tailwind.svg';
+import TypeScriptIcon from '../Icons/TypeScript.svg';
+import VSCodeIcon from '../Icons/VSC.svg';
+import VisualStudioIcon from '../Icons/VS.svg';
+import LinuxIcon from '../Icons/Linux.svg';
+import GodotIcon from '../Icons/Godot.svg';
 
 function Skills() {
     return (
@@ -71,6 +72,10 @@ function Skills() {
                 <div className="flex flex-col items-center mx-8">
                   <img src={PythonIcon} alt="Python" className="h-16 w-16" />
                   <span className="text-white text-sm mt-2">Python</span>
+                </div>
+                <div className="flex flex-col items-center mx-8">
+                  <img src={GodotIcon} alt="Godot Engine" className="h-16 w-16" />
+                  <span className="text-white text-sm mt-2">Godot</span>
                 </div>
                 <div className="flex flex-col items-center mx-8">
                   <img src={MySqlIcon} alt="MySQL" className="h-16 w-16" />
@@ -143,6 +148,10 @@ function Skills() {
                   <span className="text-white text-sm mt-2">Python</span>
                 </div>
                 <div className="flex flex-col items-center mx-8">
+                  <img src={GodotIcon} alt="Godot Engine" className="h-16 w-16" />
+                  <span className="text-white text-sm mt-2">Godot</span>
+                </div>
+                <div className="flex flex-col items-center mx-8">
                   <img src={MySqlIcon} alt="MySQL" className="h-16 w-16" />
                   <span className="text-white text-sm mt-2">MySQL</span>
                 </div>
@@ -169,10 +178,6 @@ function Skills() {
                 <div className="flex flex-col items-center mx-8">
                   <img src={LinuxIcon} alt="Linux" className="h-16 w-16" />
                   <span className="text-white text-sm mt-2">Linux</span>
-                </div>
-                <div className="flex flex-col items-center mx-8">
-                  <img src={CssIcon} alt="CSS3" className="h-16 w-16" />
-                  <span className="text-white text-sm mt-2">CSS3</span>
                 </div>
               </div>
             </div>
