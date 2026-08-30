@@ -43,10 +43,16 @@ function Projects() {
               <i className="fa-solid fa-code-branch text-blue-400"></i>
               My first React Project
             </h2>
-            <a href="https://zriveros.github.io/reactapp/#" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 mb-3 transition-colors">
-              <i className="fa-brands fa-github"></i>
-              <span>GitHub Repository</span>
-            </a>
+            <div className="flex flex-wrap items-center gap-4 mb-3">
+              <a href="https://github.com/ZRiveros/reactapp" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors">
+                <i className="fa-brands fa-github"></i>
+                <span>GitHub Repository</span>
+              </a>
+              <a href="https://zriveros.github.io/reactapp/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors">
+                <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                <span>Live Demo</span>
+              </a>
+            </div>
             <p className="text-gray-300 leading-relaxed">
               First React assignment — simple UI, working logic, lots of learning.
             </p>      
@@ -58,7 +64,7 @@ function Projects() {
               <i className="fa-solid fa-code-branch text-blue-400"></i>
               Alpha – Project Management Portal
             </h2>
-            <a href="https://github.com/ZRiveros/Alpha-ProjectManager#" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 mb-3 transition-colors">
+            <a href="https://github.com/ZRiveros/Alpha-ProjectManager" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 mb-3 transition-colors">
               <i className="fa-brands fa-github"></i>
               <span>GitHub Repository</span>
             </a>
@@ -73,7 +79,7 @@ function Projects() {
               <i className="fa-solid fa-code-branch text-blue-400"></i>
               Umbraco Onatrix – CMS Website
             </h2>
-            <a href="https://github.com/ZRiveros/Umbraco-CMS-Onatrix#" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 mb-3 transition-colors">
+            <a href="https://github.com/ZRiveros/Umbraco-CMS-Onatrix" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 mb-3 transition-colors">
               <i className="fa-brands fa-github"></i>
               <span>GitHub Repository</span>
             </a>
@@ -88,7 +94,7 @@ function Projects() {
               <i className="fa-solid fa-code-branch text-blue-400"></i>
               FastAPI Todo Fullstack Application
             </h2>
-            <a href="https://github.com/ZRiveros/FastAPI-Todo-Fullstack#" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 mb-3 transition-colors">
+            <a href="https://github.com/ZRiveros/FastAPI-Todo-Fullstack" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 mb-3 transition-colors">
               <i className="fa-brands fa-github"></i>
               <span>GitHub Repository</span>
             </a>
