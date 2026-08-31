@@ -17,7 +17,7 @@ import VisualStudioIcon from '../Icons/VS.svg';
 import LinuxIcon from '../Icons/Linux.svg';
 import GodotIcon from '../Icons/Godot.svg';
 import ClaudeIcon from '../Icons/Claude.svg';
-import OpenAIIcon from '../Icons/OpenAI.svg';
+import OpenAIIcon from '../Icons/Openai.svg';
 import MicrosoftIcon from '../Icons/Microsoft.svg';
 
 function Skills() {
