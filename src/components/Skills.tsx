@@ -16,6 +16,9 @@ import VSCodeIcon from '../Icons/VSC.svg';
 import VisualStudioIcon from '../Icons/VS.svg';
 import LinuxIcon from '../Icons/Linux.svg';
 import GodotIcon from '../Icons/Godot.svg';
+import ClaudeIcon from '../Icons/Claude.svg';
+import OpenAIIcon from '../Icons/OpenAI.svg';
+import MicrosoftIcon from '../Icons/Microsoft.svg';
 
 function Skills() {
     return (
@@ -36,6 +39,18 @@ function Skills() {
                 <div className="flex flex-col items-center mx-8">
                     <img src={HtmlIcon} alt="HTML5" className="h-16 w-16" />
                     <span className="text-white text-sm mt-2">HTML5</span>
+                </div>
+                <div className="flex flex-col items-center mx-8">
+                    <img src={MicrosoftIcon} alt="Microsoft" className="h-16 w-16" />
+                    <span className="text-white text-sm mt-2">Microsoft</span>
+                </div>
+                <div className="flex flex-col items-center mx-8">
+                    <img src={OpenAIIcon} alt="OpenAI" className="h-16 w-16" />
+                    <span className="text-white text-sm mt-2">OpenAI</span>
+                </div>
+                  <div className="flex flex-col items-center mx-8">
+                    <img src={ClaudeIcon} alt="Claude" className="h-16 w-16" />
+                    <span className="text-white text-sm mt-2">Claude</span>
                 </div>
                 <div className="flex flex-col items-center mx-8">
                   <img src={CssIcon} alt="CSS3" className="h-16 w-16" />
