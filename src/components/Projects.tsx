@@ -14,12 +14,12 @@ function Projects() {
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {/* Featured - Godot Metroidvania (in development) */}
+          {/* Featured - Unity Metroidvania (in development) */}
           <div className="md:col-span-2 rounded-3xl border-2 border-gray-300 bg-gradient-to-r from-purple-500/10 to-blue-500/10 backdrop-blur-sm p-6 hover:scale-105 hover:border-white hover:shadow-xl transition-all duration-300">
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-3">
               <h2 className="text-2xl font-bold text-white flex items-center gap-2">
                 <i className="fa-solid fa-gamepad text-purple-400"></i>
-                Metroidvania — Godot Engine
+                2D Metroidvania — Unity
               </h2>
               <span className="self-start sm:self-auto flex-shrink-0 inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm font-semibold text-purple-200 bg-purple-500/20 border border-purple-400/40">
                 <i className="fa-solid fa-hammer"></i>
@@ -27,13 +27,16 @@ function Projects() {
               </span>
             </div>
             <p className="text-gray-300 leading-relaxed">
-              A 2.5D Metroidvania I'm building with another developer in <span className="text-purple-300 font-semibold">Godot</span>, written in a mix of <span className="text-purple-300 font-semibold">C#</span> and <span className="text-purple-300 font-semibold">GDScript</span>. Still an early prototype, but the core systems are working: player movement, combat and enemy behaviour, room transitions and level structure, and save/load with ability gating.
+              A gothic 2D pixel-art Metroidvania I'm building with another developer, in <span className="text-purple-300 font-semibold">Unity 6</span> and <span className="text-purple-300 font-semibold">C#</span> on our own in-house engine. The core is a custom 2D character controller (slopes, one-way and moving platforms), camera rooms, abilities as small independent components, and PlayMode tests run from the command line. Every change goes through a pull request, tests included.
             </p>
             <p className="text-gray-300 leading-relaxed mt-3">
-              The C# side overlaps directly with my .NET work, applied to a very different problem space — real-time state, frame-by-frame update loops, and keeping the architecture clean in a shared codebase as scope grows.
+              Characters are modelled and rigged in Blender, driven by motion capture and rendered down to pixel art with a fixed palette. AI-assisted tooling handles the repetitive parts, and every asset is reviewed by hand.
+            </p>
+            <p className="text-gray-300 leading-relaxed mt-3">
+              The C# overlaps directly with my .NET work, applied to a very different problem space — real-time state, frame-by-frame loops, and keeping a shared codebase clean as scope grows.
             </p>
             <p className="text-gray-400 leading-relaxed mt-3 text-sm italic">
-              Repository and gameplay footage to follow once the art and level design are further along.
+              Early build — more to show later.
             </p>
           </div>
 
